@@ -1,16 +1,19 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
+import getParse from '../src/parsers.js'
 
-const gendiff = () => {
+const genDiff = () => {
     program
         .version('0.0.1', '-V, --version', 'output the version number')
         .description('Compares two configuration files and shows a difference.')
-        .arguments('<filepath1> <filepath2>')
         .option('-f, --format [type]', 'output format')
+        .arguments('<filepath1> <filepath2>')
+        .action((filepath1, filepath2) => {
+        });
     program.parse(process.argv);
 };
 
-export default gendiff;
+export default genDiff;
 
-gendiff();
+genDiff();
