@@ -13,3 +13,6 @@ https://asciinema.org/a/oVkyphc1jtntGq9QIXDhAKyce
 
 ### Demonstration of work with .yml files:
  https://asciinema.org/a/D5xLsgu34OaoBbebFwQYVNF4I
+
+### Demonstration of work with children object:
+https://asciinema.org/a/T7pc25NGWA6K111xWlXZYen0k
