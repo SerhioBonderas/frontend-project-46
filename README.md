@@ -38,13 +38,17 @@ By default, differences are output in stylish format.
 To compare files, enter the gendiff command with the path to the first and second files. 
 By default, the output will be in stylish format.
 
-Example: 
+#### Example: 
     gendiff filePath1/namefile1.json filePath2/namefile2.json 
 
 If you want to change the output format, specify the --format flag with the format name. It can be 'plain' or 'json'.
 
-Example: 
+#### Example with plain: 
+
     gendiff --format plain filePath1/namefile1.json filePath2/namefile2.json 
+
+#### Example with json: 
+
     gendiff --format json filePath1/namefile1.json filePath2/namefile2.json 
 
 ### Demonstration of work with .json files:
