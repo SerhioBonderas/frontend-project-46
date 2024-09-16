@@ -9,8 +9,13 @@ test('genDiff', () => {
   const path3 = getFixturePath('file1.yml');
   const path4 = getFixturePath('file2.yml');
 
-  const data = fs.readFileSync(getFixturePath('test-result.txt'), 'utf-8');
+  const dataStylish = fs.readFileSync(getFixturePath('test-stylish.txt'), 'utf-8');
+  const dataPlain = fs.readFileSync(getFixturePath('test-plain.txt'), 'utf-8');
 
-  expect(genDiff(path1, path2)).toBe(data);
-  expect(genDiff(path3, path4)).toBe(data);
+  expect(genDiff(path1, path2, 'stylish')).toBe(dataStylish);
+  expect(genDiff(path3, path4, 'stylish')).toBe(dataStylish);
+  expect(genDiff(path1, path2, 'plain')).toBe(dataPlain);
+  expect(genDiff(path3, path4, 'plain')).toBe(dataPlain);
+  expect(genDiff(path1, path2)).toBe(dataStylish);
+  expect(genDiff(path3, path4)).toBe(dataStylish);
 });
