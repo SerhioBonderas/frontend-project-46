@@ -16,3 +16,6 @@ https://asciinema.org/a/oVkyphc1jtntGq9QIXDhAKyce
 
 ### Demonstration of work with children object:
 https://asciinema.org/a/T7pc25NGWA6K111xWlXZYen0k
+
+### Demonstration of work with all format:
+https://asciinema.org/a/O6eaFtd6W8nBTgMy7ahz95UYD

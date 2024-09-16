@@ -11,11 +11,14 @@ test('genDiff', () => {
 
   const dataStylish = fs.readFileSync(getFixturePath('test-stylish.txt'), 'utf-8');
   const dataPlain = fs.readFileSync(getFixturePath('test-plain.txt'), 'utf-8');
+  const dataJson = fs.readFileSync(getFixturePath('test-json.txt'), 'utf-8');
 
   expect(genDiff(path1, path2, 'stylish')).toBe(dataStylish);
   expect(genDiff(path3, path4, 'stylish')).toBe(dataStylish);
   expect(genDiff(path1, path2, 'plain')).toBe(dataPlain);
   expect(genDiff(path3, path4, 'plain')).toBe(dataPlain);
+  expect(genDiff(path1, path2, 'json')).toBe(dataJson);
+  expect(genDiff(path3, path4, 'json')).toBe(dataJson);
   expect(genDiff(path1, path2)).toBe(dataStylish);
   expect(genDiff(path3, path4)).toBe(dataStylish);
 });
