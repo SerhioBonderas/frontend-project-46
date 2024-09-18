@@ -12,13 +12,17 @@
 gendiff - This is a console application for comparing data between two files.
 
 You can work with files in the following formats:
-    json
+    json or
     yml/yaml
 
 At the output you can get data in the following formats:
+
     stylish
+    
     plain
+    
     json
+    
 By default, differences are output in stylish format.
 
 ## Install
