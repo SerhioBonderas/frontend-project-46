@@ -2,12 +2,12 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/SerhioBonderas/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SerhioBonderas/frontend-project-46/actions)",
-  "main": "index.js",
+  "description": "Console application for comparing data between two files.",
+  "main": "src/index.js",
   "scripts": {
     "test": "npx jest"
   },
-  "author": "",
+  "author": "Serhio",
   "license": "ISC",
   "bin": {
     "gendiff": "bin/gendiff.js"
